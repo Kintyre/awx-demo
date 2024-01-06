@@ -1,0 +1,7 @@
+- name: demo
+  hosts: all
+  tasks:
+
+    - name: version
+      debug:
+        var: ansible_version
