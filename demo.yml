@@ -15,4 +15,14 @@
       debug:
         var: pip.stdout_lines
 
+    - name: get collections
+      command: ansible-galaxy collection list
+      register: galaxy
+
+    - name: show collections
+      debug:
+        var: galaxy.stdout_lines
+
+
+
 
